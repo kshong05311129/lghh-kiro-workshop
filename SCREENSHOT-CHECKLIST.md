@@ -20,6 +20,8 @@
 | 🔴 | `module2-vibe-coding/iterate.md` (개선 3) | Flip 애니메이션으로 뒤집힌 카드 뒷면 |
 | 🔴 | `module2-vibe-coding/file-context.md` (Step 3) | 검색/필터 적용된 인터랙티브 카탈로그 (`product-catalog.html`) |
 | 🔴 | `module2-vibe-coding/file-context.md` (Step 3) | 카드 클릭 시 뜨는 상세 모달 팝업 |
+| 🟡 | `module2-vibe-coding/file-context.md` (Step 4-1, 보너스) | 즐겨찾기 하트 + 메모 기능 |
+| 🟡 | `module2-vibe-coding/file-context.md` (Step 4-2, 보너스) | 드래그로 순서를 바꾼 우선순위 보드 |
 | 🔴 | `module3-hook-skill/README.md` (Skill 실습) | `/product-report` 실행 결과 (차트 포함 대시보드) |
 | 🔴 | `module3-hook-skill/README.md` (Hook 실습) | CSV 저장 → Hook 자동 실행되어 만들어진 `luxury-products.html` |
 | 🟡 | `module3-spec/write-spec.md` (Step 1) | Spec 생성 요청 입력 후 "Input required" 화면 (Build a Feature / Requirements 선택) |
