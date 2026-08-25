@@ -80,14 +80,14 @@ graph TD
 https://raw.githubusercontent.com/kshong05311129/lghh-kiro-workshop/main/data/lghh_products_2026.csv
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ```
 아래 URL의 내용을 다운로드해서 data/beauty-brand-guide.md 파일로 저장해줘
 https://raw.githubusercontent.com/kshong05311129/lghh-kiro-workshop/main/data/beauty-brand-guide.md
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 > 💡 CSV는 2026년 상반기 LG생활건강 가상 제품 데이터, 브랜드 가이드는 브랜드별 포지셔닝/톤앤매너 샘플 문서입니다. 이후 여러 모듈에서 반복해서 사용합니다.
 

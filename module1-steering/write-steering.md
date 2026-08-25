@@ -60,7 +60,7 @@ kiro-beauty-workshop/
 
 > 💡 `data/beauty-brand-guide.md`를 참고 자료로 지정해뒀기 때문에, AI가 문서에 있는 "품격 있고 격조 높은 표현" 같은 실제 가이드 내용을 근거로 답변합니다. AI의 일반 지식이 아니라 **우리가 준 문서 기반**이라 매번 같은 기준으로 답한다는 게 핵심이에요.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: 비교해보기
 
