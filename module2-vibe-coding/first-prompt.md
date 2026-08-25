@@ -38,10 +38,10 @@ Kiro 채팅창에 아래를 입력하세요:
 ## Step 2: 결과 확인하기
 
 1. 왼쪽 파일 탐색기에서 `product-card.html` 파일이 생겼는지 확인
-2. 파일을 **우클릭 → Open with Live Server** 또는 **파일 탐색기에서 더블클릭**
+2. **파일 탐색기에서 더블클릭**
 3. 브라우저에서 열리면 성공! 🎉
 
-> 📸 _스크린샷 삽입: 제품 소개 카드 생성기 완성 화면_
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: 테스트 해보기
 
@@ -55,6 +55,8 @@ Kiro 채팅창에 아래를 입력하세요:
 | 핵심 성분 | 녹용, 산삼, 사향               |
 | 가격    | 350,000원                 |
 | 한줄 설명 | 피부에 왕실의 생기를 불어넣는 럭셔리 에센스 |
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## 💡 잘 안 되면?
 
