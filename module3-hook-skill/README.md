@@ -129,13 +129,11 @@ Kiro 왼쪽 패널에서 **Agent Hooks** 섹션을 찾아 **+** 버튼을 클릭
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-**"Ask Kiro to create a hook"** 을 선택하고 아래 내용을 입력하세요:
-
 **"Ask Kiro to create a hook" 클릭하면 자동으로 아래 문구가 있습니다. 엔터치세요.**
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-
+그 이후, **"Ask Kiro to create a hook"** 을 선택하고 아래 내용을 입력하세요:&#x20;
 
 ```
 data/lghh_products_2026.csv 파일이 AI에 의해 수정되면, 자동으로 신제품 검토 보고서를 new-product-review.html로 만들어줘.
@@ -148,6 +146,12 @@ data/lghh_products_2026.csv 파일이 AI에 의해 수정되면, 자동으로 �
 
 디자인은 카드가 아니라 정식 보고서 형태로 (제목/작성일자, 표 형식 데이터, 결론 섹션). LG생활건강 브랜드 컬러 사용, 인쇄해도 보기 좋게 만들어줘.
 ```
+
+
+
+
+
+
 
 ### Step 2: Hook 동작 확인
 
@@ -166,7 +170,11 @@ data/lghh_products_2026.csv 파일에 아래 제품 한 줄을 추가해줘:
 
 이것이 Hook의 힘입니다. 한 번 설정하면 "CSV에 제품 추가해줘"라고 자연어로 요청할 때마다, 별도 지시 없이도 검토 보고서가 자동으로 따라 나옵니다. 실무에서라면 "신제품 등록 → 검토 보고서 자동 생성"이 되는 셈이죠.
 
-> 📸 _스크린샷 삽입: AI에게 CSV 추가 요청 → Hook 자동 실행으로 생성된 검토 보고서_
+> &#x20;_Hook 자동 실행으로 생성된 검토 보고서_
+>
+>
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ## 💡 Hook vs Skill 정리
 
