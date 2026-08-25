@@ -13,7 +13,8 @@
 |---|---|---|
 | 🟡 | `introduction/getting-started.md` (Step 5) | `lghh_products_2026.csv` 다운로드 완료 화면 (파일 탐색기 또는 채팅 응답) |
 | 🟡 | `introduction/getting-started.md` (Step 5) | `beauty-brand-guide.md` 다운로드 완료 화면 |
-| 🔴 | `module1-steering/write-steering.md` | Steering 있음/없음 답변 비교 (두 답변을 나란히 캡처하거나 이어붙이기) |
+| 🔴 | `module1-steering/write-steering.md` (Step 1) | Steering 만들기 전, 베이스라인 답변 |
+| 🔴 | `module1-steering/write-steering.md` (Step 4) | Steering 적용 후, 같은 질문에 대한 답변 (Step 1과 나란히 배치하면 효과적) |
 | 🔴 | `module2-vibe-coding/first-prompt.md` | `product-card.html` 완성 후 브라우저 실행 화면 (첫 프롬프트 결과) |
 | 🔴 | `module2-vibe-coding/iterate.md` (개선 1) | 다크+골드 톤 개선 후 카드 |
 | 🟡 | `module2-vibe-coding/iterate.md` (개선 2) | "이미지로 저장" 버튼으로 받은 PNG 결과물 |
