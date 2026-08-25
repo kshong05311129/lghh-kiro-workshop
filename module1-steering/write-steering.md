@@ -60,14 +60,14 @@ kiro-beauty-workshop/
 
 > 💡 `data/beauty-brand-guide.md`를 참고 자료로 지정해뒀기 때문에, AI가 문서에 있는 "품격 있고 격조 높은 표현" 같은 실제 가이드 내용을 근거로 답변합니다. AI의 일반 지식이 아니라 **우리가 준 문서 기반**이라 매번 같은 기준으로 답한다는 게 핵심이에요.
 
-> 📸 *스크린샷 삽입: Steering 적용 후 받은 답변*
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: 비교해보기
 
 만약 Steering(+참고 자료) 없이 같은 질문을 하면 어떨까요?
 
-- Steering 있음: "후는 궁중 한방 럭셔리 브랜드로, 품격 있고 격조 높은 표현을 사용하며..." (문서 기반, 일관됨)
-- Steering 없음: "후(后)는 한국 화장품 브랜드입니다..." (일반적, 매번 다를 수 있음)
+* Steering 있음: "후는 궁중 한방 럭셔리 브랜드로, 품격 있고 격조 높은 표현을 사용하며..." (문서 기반, 일관됨)
+* Steering 없음: "후(后)는 한국 화장품 브랜드입니다..." (일반적, 매번 다를 수 있음)
 
 > 🎁 **궁금하신 분은 직접 비교해보세요**: `.kiro/steering` 폴더 이름을 잠깐 `steering-off` 같은 걸로 바꾼 뒤 새 대화에서 같은 질문을 해보면, 방금 받은 답변과 확실히 달라지는 걸 직접 확인할 수 있습니다. 확인 후에는 폴더 이름을 다시 `steering`으로 되돌려주세요.
 
@@ -86,33 +86,35 @@ steering 파일에 아래 규칙을 추가해줘:
 
 여러분의 업무에 맞게 역할을 바꿔볼 수도 있습니다:
 
-| 업무 | Steering 예시 |
-|------|----------------|
-| 마케팅/BM | 브랜드 포지셔닝, 카피 표현 가이드라인 준수 |
+| 업무        | Steering 예시                 |
+| --------- | --------------------------- |
+| 마케팅/BM    | 브랜드 포지셔닝, 카피 표현 가이드라인 준수    |
 | 상품기획(NPL) | 신제품 컨셉 적합성, 포트폴리오 내 포지셔닝 검토 |
-| CS/고객대응 | 컴플레인 대응 원칙, 공감 우선 톤 |
-| 디자인 | 브랜드별 컬러/톤앤매너 가이드 준수 |
+| CS/고객대응   | 컴플레인 대응 원칙, 공감 우선 톤         |
+| 디자인       | 브랜드별 컬러/톤앤매너 가이드 준수         |
 
 ## ✅ 완료 체크리스트
 
-- [ ] `.kiro/steering/product.md` 파일 생성 완료
-- [ ] 참고 자료로 `data/beauty-brand-guide.md`를 지정
-- [ ] AI에게 질문해서 Steering 효과 확인
-- [ ] (보너스) 나만의 규칙 추가
+* [ ] `.kiro/steering/product.md` 파일 생성 완료
+* [ ] 참고 자료로 `data/beauty-brand-guide.md`를 지정
+* [ ] AI에게 질문해서 Steering 효과 확인
+* [ ] (보너스) 나만의 규칙 추가
 
 ## 🔧 트러블슈팅
 
 ### "파일이 안 만들어져요"
-- 채팅에서 직접 "product.md 파일 만들어줘"라고 다시 요청
-- 또는 왼쪽 파일 탐색기에서 직접 폴더/파일 생성
+
+* 채팅에서 직접 "product.md 파일 만들어줘"라고 다시 요청
+* 또는 왼쪽 파일 탐색기에서 직접 폴더/파일 생성
 
 ### "Steering이 적용 안 되는 것 같아요"
-- 파일 경로가 `.kiro/steering/` 안에 있는지 확인
-- `data/beauty-brand-guide.md`가 실제로 존재하는지 확인 (없다면 [환경 설정](../introduction/getting-started.md)의 Step 5 다시 진행)
-- 채팅을 새로 시작해보세요 (새 대화)
 
----
+* 파일 경로가 `.kiro/steering/` 안에 있는지 확인
+* `data/beauty-brand-guide.md`가 실제로 존재하는지 확인 (없다면 [환경 설정](../introduction/getting-started.md)의 Step 5 다시 진행)
+* 채팅을 새로 시작해보세요 (새 대화)
+
+***
 
 > 🎉 **축하합니다!** AI에게 역할을 부여하는 방법을 배웠습니다!
 
-👉 다음: [Module 2: Vibe Coding](../module2-vibe-coding/README.md)
+👉 다음: [Module 2: Vibe Coding](../module2-vibe-coding/)
