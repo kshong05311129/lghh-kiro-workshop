@@ -114,7 +114,11 @@ data/lghh_products_2026.csv 파일을 참고해서 인터랙티브 제품 카탈
 - 순서도 localStorage에 저장해서 유지되게 해줘
 ```
 
-> 📸 _스크린샷 삽입: 드래그로 순서를 바꾼 우선순위 보드_
+> &#x20;_드래그로 순서를 바꾼 우선순위 보드_
+>
+>
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### 4-3. 내보내기 / 불러오기 (백업)
 
@@ -126,6 +130,10 @@ JSON 파일로 다운로드하게 해줘.
 ```
 
 > 💡 이제 이 카탈로그는 DB 없이도 "내 데이터가 안전하게 남아있는" 개인 도구가 됐습니다. 브라우저가 곧 작은 데이터베이스인 셈이죠!
+>
+>
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 #### 그 외 추가로 해볼 수 있는 것들
 
@@ -147,7 +155,9 @@ data/lghh_products_2026.csv 참고해서 ~해줘
 
 ### 방법 2: @ 멘션 (Kiro 기능)
 
-채팅에서 `@`를 입력하면 파일 목록이 나타납니다. 파일을 선택하면 AI가 자동으로 참고합니다.
+채팅에서 #를 입력하면 파일 목록이 나타납니다. 파일을 선택하면 AI가 자동으로 참고합니다.
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### 방법 3: 파일을 열어둔 상태에서 요청
 
