@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/kshong05311129/lghh-kiro-workshop/main/data/lg
 data/lghh_products_2026.csv 파일 내용을 보여줘. 어떤 컬럼이 있는지 정리해줘.
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: 카탈로그 요청
 
@@ -76,13 +76,13 @@ data/lghh_products_2026.csv 파일을 참고해서 인터랙티브 제품 카탈
 >
 >
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 > _상세 모달 팝업 화면_
 >
 >
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: 레벨업 — 나만의 뷰티 컬렉션 보드 (보너스)
 

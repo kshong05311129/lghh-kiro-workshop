@@ -49,7 +49,7 @@ data/beauty-brand-guide.md 파일을 참고해서, 카드에 "AI 카피 생성" 
 
 > 💡 이제 카드가 단순 정보 표시를 넘어서, **문서를 참고해 실제 업무 산출물(카피)까지 만들어주는 도구**가 됐습니다.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 개선 3: 카드 Flip 애니메이션
 
