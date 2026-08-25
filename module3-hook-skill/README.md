@@ -127,11 +127,17 @@ description: 제품 CSV 데이터를 분석하여 제품 현황 보고서를 생
 
 Kiro 왼쪽 패널에서 **Agent Hooks** 섹션을 찾아 **+** 버튼을 클릭합니다.
 
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
 **"Ask Kiro to create a hook"** 을 선택하고 아래 내용을 입력하세요:
 
 ```
 CSV 파일이 저장되면, 자동으로 럭셔리 브랜드(후, 오휘, 숨37) 제품만 필터링해서 luxury-products.html 파일로 만들어줘. 제품명, 가격, 핵심 성분을 카드 형태로 예쁘게 보여줘. LG생활건강 브랜드 색상 사용해줘.
 ```
+
+
+
+
 
 ### Step 2: Hook 동작 확인
 
