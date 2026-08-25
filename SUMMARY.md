@@ -13,7 +13,7 @@
 * [Module 3: Hook & Skill](module3-hook-skill/README.md)
 * [Module 4: Spec 기반 개발](module3-spec/README.md)
   * [Spec 작성하기](module3-spec/write-spec.md)
-  * [Task 실행하기](module3-spec/run-tasks.md)
+  * [🚀 (보너스) Task 실행하기](module3-spec/run-tasks.md)
 * [Module 5: 자유 실습](module4-challenge/README.md)
   * [실습 주제 선택](module4-challenge/topics.md)
 * [Module 6: MCP 연동](module5-mcp/README.md)

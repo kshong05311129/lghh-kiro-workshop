@@ -12,24 +12,24 @@
 | 우선순위 | 페이지 | 캡처 시점 |
 |---|---|---|
 | 🔴 | `module1-steering/write-steering.md` | Steering 있음/없음 답변 비교 (두 답변을 나란히 캡처하거나 이어붙이기) |
-| 🟡 | `module1-steering/write-steering.md` (Step 2 부근) | 파일 탐색기에 `.kiro/steering/product.md` 생성된 모습 |
 | 🔴 | `module2-vibe-coding/first-prompt.md` | `product-card.html` 완성 후 브라우저 실행 화면 (첫 프롬프트 결과) |
 | 🔴 | `module2-vibe-coding/iterate.md` (개선 1) | 다크+골드 톤 개선 후 카드 |
 | 🟡 | `module2-vibe-coding/iterate.md` (개선 2) | "이미지로 저장" 버튼으로 받은 PNG 결과물 |
 | 🔴 | `module2-vibe-coding/file-context.md` | CSV 드롭다운 선택 → 자동 카드 생성 (`product-card-auto.html`) |
 | 🔴 | `module3-hook-skill/README.md` (Skill 실습) | `/product-report` 실행 결과 (차트 포함 대시보드) |
 | 🔴 | `module3-hook-skill/README.md` (Hook 실습) | CSV 저장 → Hook 자동 실행되어 만들어진 `luxury-products.html` |
-| 🟡 | `module3-hook-skill/README.md` (Hook 만들기) | Agent Hooks 패널에 Hook이 등록/활성화된 모습 |
-| 🟡 | `module3-spec/write-spec.md` | `.kiro/specs/competitor-analysis/tasks.md` 생성된 모습 (Task 목록) |
-| 🔴 | `module3-spec/run-tasks.md` | 완성된 `competitor-analysis.html` (비교 테이블 + 차트 + 하이라이트) |
+| 🟡 | `module3-spec/write-spec.md` (Step 1) | Spec 생성 요청 입력 후 "Input required" 화면 (Build a Feature / Requirements 선택) |
+| 🟡 | `module3-spec/write-spec.md` (Step 2) | AI가 생성한 Requirements 문서 |
+| 🔴 | `module3-spec/write-spec.md` (Step 4) | Design 문서 + Task 목록 화면 |
+| 🟡 | `module3-spec/run-tasks.md` (보너스) | 완성된 `competitor-analysis.html` (Task 전체 실행까지 간 경우에만) |
 | 🔴 | `module5-mcp/setup-mcp.md` | MCP 서버 상태 "Connected" 확인 화면 |
-| 🟡 | `module5-mcp/mcp-practice.md` | AI가 "AWS 문서를 검색 중..." 표시하며 답변하는 화면 |
 
 ## 촬영 팁
 
 - **해상도**: 가로 1200~1600px 정도면 GitBook에서 충분히 선명합니다. 과하게 큰 원본은 용량만 커짐.
 - **민감정보 제외**: 캡처 화면에 본인 이메일/계정명이 노출되는 부분(좌하단 계정 아이콘 등)은 크롭하거나 모자이크 처리 후 삽입하세요.
 - **비교 캡처(Module 1)**: Steering 있음/없음 답변을 각각 캡처한 뒤 나란히 이어붙이면(2-up) 더 효과적입니다.
+- **Module 4 Spec 패널 UI**: "+ Create New Spec", "Input required" 버튼 문구는 Kiro 버전에 따라 다를 수 있습니다. 실습 시점에 실제 화면 문구를 확인하고, 본문 설명과 다르면 문서도 같이 업데이트해주세요.
 - **삽입 후**: `> 📸 *스크린샷 삽입: ...*` 표시 문구는 삭제하세요. (GitBook에서 직접 편집하면 git 저장소에도 자동 반영됩니다.)
 
 이 체크리스트 자체는 SUMMARY.md에 포함되지 않은 내부 작업용 문서입니다 — 워크샵 참가자에게는 노출되지 않습니다.

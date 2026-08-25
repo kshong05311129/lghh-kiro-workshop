@@ -1,6 +1,6 @@
 # 🔧 MCP 설정하기
 
-> 🎯 AWS 문서 검색 MCP를 연결해봅시다! (5분)
+> 🎯 웹 검색 MCP를 연결해봅시다! (5분)
 
 ## Step 1: MCP 설정 파일 생성
 
@@ -11,12 +11,9 @@ Kiro 채팅창에 아래를 입력하세요:
 
 {
   "mcpServers": {
-    "aws-docs": {
+    "web-search": {
       "command": "uvx",
-      "args": ["awslabs.aws-documentation-mcp-server@latest"],
-      "env": {
-        "FASTMCP_LOG_LEVEL": "ERROR"
-      },
+      "args": ["duckduckgo-mcp-server"],
       "timeout": 30
     }
   }
@@ -27,7 +24,7 @@ Kiro 채팅창에 아래를 입력하세요:
 
 1. 파일 저장 후, Kiro를 **재시작** (File → Reload Window 또는 `Ctrl+Shift+P` → "Reload")
 2. 왼쪽 하단 또는 설정에서 **MCP 서버 상태** 확인
-3. `aws-docs`가 **Connected** ✅ 상태면 성공!
+3. `web-search`가 **Connected** ✅ 상태면 성공!
 
 > 📸 *스크린샷 삽입: MCP 서버 Connected 상태 화면*
 
@@ -36,10 +33,10 @@ Kiro 채팅창에 아래를 입력하세요:
 채팅에 입력:
 
 ```
-AWS S3란 무엇인지 공식 문서에서 찾아서 설명해줘
+설화수 자음생 에센스 최신 리뷰를 웹에서 검색해서 정리해줘
 ```
 
-> 💡 AI가 **"AWS 문서를 검색 중..."** 이라는 메시지를 보여주면 MCP가 정상 작동하는 것입니다!
+> 💡 AI가 **"웹을 검색 중..."** 이라는 메시지를 보여주면 MCP가 정상 작동하는 것입니다!
 
 ## ⚠️ 설치 필요 사항
 

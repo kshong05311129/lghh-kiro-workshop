@@ -11,8 +11,26 @@
 | ✅ AI에게 역할 부여 (Steering) | 뷰티 제품 분석 어시스턴트 |
 | ✅ 대화로 코딩 (Vibe Coding) | 제품 소개 카드 생성기 |
 | ✅ 자동화 (Hook & Skill) | 제품 분석 대시보드, 자동 분류 |
-| ✅ 체계적 설계 (Spec) | 경쟁사 비교 분석 도구 |
-| ✅ 외부 연결 (MCP) | AWS 문서 검색 AI |
+| ✅ 체계적 설계 (Spec) | 경쟁사 비교 분석 도구 (Requirements/Design) |
+| ✅ 자유 실습 | 나만의 뷰티 업무 도구 |
+| ✅ 외부 연결 (MCP) | 실시간 웹 검색 AI |
+
+```mermaid
+graph TD
+    A[오늘 배운 것] --> B[Module 1: Steering]
+    A --> C[Module 2: Vibe Coding]
+    A --> D[Module 3: Hook & Skill]
+    A --> E[Module 4: Spec 기반]
+    A --> F[Module 5: 자유 실습]
+    A --> G[Module 6: MCP 연동]
+
+    B --> B1[AI에게 역할 부여]
+    C --> C1[대화로 코딩하기]
+    D --> D1[자동화 & 단축 명령]
+    E --> E1[설계서로 체계적 개발]
+    F --> F1[나만의 도구 만들기]
+    G --> G1[외부 지식 연결]
+```
 
 > 💪 코딩을 한 줄도 직접 쓰지 않고, **말로 설명해서** 이 모든 걸 만들었습니다!
 
@@ -90,6 +108,27 @@ Kiro 공식 문서 (심화)
     ↓
 팀 내 전파 (확산)
 ```
+
+---
+
+## 🚀 더 배우고 싶다면
+
+| 자료 | 링크 |
+|------|------|
+| Kiro 공식 문서 | [kiro.dev/docs](https://kiro.dev/docs) |
+| Kiro FAQ | [kiro.dev/faq](https://kiro.dev/faq/) |
+| Kiro GitHub | [github.com/kirodotdev/Kiro](https://github.com/kirodotdev/Kiro) |
+
+---
+
+## 📊 워크샵 피드백
+
+오늘 워크샵은 어떠셨나요? 솔직한 피드백을 부탁드립니다! 🙏
+
+- 가장 재미있었던 부분은?
+- 어려웠던 부분은?
+- 실무에서 활용하고 싶은 것은?
+- 개선할 점은?
 
 ---
 
