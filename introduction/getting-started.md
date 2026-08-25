@@ -9,6 +9,7 @@
 * [ ] 노트북 준비 (Windows 또는 Mac)
 * [ ] 인터넷 연결 확인
 * [ ] Kiro IDE 설치 완료
+* [ ] Python / Node.js 설치 완료
 * [ ] 로그인 완료
 * [ ] 실습 데이터 다운로드 완료
 
@@ -42,7 +43,21 @@
 
 > 💡 설치가 안 되면 손 들어주세요! 진행자가 도와드립니다. 🙋
 
-## Step 3: 로그인 🔑
+## Step 3: 필수 프로그램 설치 (Python / Node.js) 🐍
+
+> 💡 Kiro가 코드를 만든 뒤 문법 오류가 없는지 스스로 확인하면서, 가끔 Python이나 Node.js를 자동으로 실행합니다. 미리 설치해두면 이 과정이 매끄럽게 진행됩니다.
+
+### Windows
+1. **Python**: [python.org/downloads](https://www.python.org/downloads/)에서 다운로드 후 설치. 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크하세요.
+2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+
+### Mac
+1. **Python**: 대부분 기본 내장되어 있습니다. 터미널을 열어 `python3 --version`을 입력했을 때 버전이 나오면 OK. 처음 실행 시 "Install Command Line Developer Tools" 팝업이 뜨면 설치를 눌러주세요 (몇 분 소요될 수 있습니다).
+2. **Node.js**: 터미널에서 `brew install node` (Homebrew가 없다면 [brew.sh](https://brew.sh) 참고)
+
+> 💡 설치가 번거로우면 진행자에게 요청하세요! 워크샵 시작 전 미리 도와드릴 수 있습니다.
+
+## Step 4: 로그인 🔑
 
 > ⚠️ **중요**: 오늘 워크샵은 **AWS IAM Identity Center** 방식(회사 SSO 계정)으로 로그인합니다. 개인 계정이 아닌, **워크샵 진행자가 안내하는 Start URL과 계정 정보**를 사용하세요.
 
@@ -65,13 +80,13 @@ graph TD
 
 > ⚠️ **Start URL이나 계정 정보를 모르겠다면?** 진행자에게 바로 문의하세요. 워크샵 시작 전 미리 배포된 안내문을 확인해보세요.
 
-## Step 4: 프로젝트 폴더 만들기 📁
+## Step 5: 프로젝트 폴더 만들기 📁
 
 1. 바탕화면에 `kiro-beauty-workshop` 폴더를 만듭니다
 2. Kiro에서 **File → Open Folder** 클릭
 3. 방금 만든 `kiro-beauty-workshop` 폴더 선택
 
-## Step 5: 실습 데이터 준비 📄
+## Step 6: 실습 데이터 준비 📄
 
 오늘 워크샵에서 계속 사용할 데이터 2개를 미리 받아둡니다. Kiro AI 채팅창에 아래를 각각 입력하세요:
 
@@ -91,7 +106,7 @@ https://raw.githubusercontent.com/kshong05311129/lghh-kiro-workshop/main/data/be
 
 > 💡 CSV는 2026년 상반기 LG생활건강 가상 제품 데이터, 브랜드 가이드는 브랜드별 포지셔닝/톤앤매너 샘플 문서입니다. 이후 여러 모듈에서 반복해서 사용합니다.
 
-## Step 6: 잘 되는지 확인하기 ✅
+## Step 7: 잘 되는지 확인하기 ✅
 
 Kiro 화면에서 아래를 확인하세요:
 
@@ -128,6 +143,12 @@ AI가 답변하면 성공입니다! 🎉
 
 * 인터넷 연결 확인 후 다시 요청
 * `data` 폴더가 없다면 "data 폴더 만들어줘"라고 먼저 요청
+
+### "python3 / node 명령이 안 먹혀요"
+
+* Windows: 설치 시 PATH 등록 체크를 놓쳤을 수 있습니다. 재설치하거나, 설치 후 컴퓨터를 재시작해보세요.
+* Mac: 터미널에서 `python3 --version`, `node --version`으로 설치 여부 확인
+* 그래도 안 되면 진행자에게 요청하세요 — 이 부분이 없어도 워크샵 진행 자체는 가능합니다.
 
 ***
 

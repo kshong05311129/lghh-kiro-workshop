@@ -11,8 +11,8 @@
 
 | 우선순위 | 페이지 | 캡처 시점 |
 |---|---|---|
-| 🟡 | `introduction/getting-started.md` (Step 5) | `lghh_products_2026.csv` 다운로드 완료 화면 (파일 탐색기 또는 채팅 응답) |
-| 🟡 | `introduction/getting-started.md` (Step 5) | `beauty-brand-guide.md` 다운로드 완료 화면 |
+| 🟡 | `introduction/getting-started.md` (Step 6) | `lghh_products_2026.csv` 다운로드 완료 화면 (파일 탐색기 또는 채팅 응답) |
+| 🟡 | `introduction/getting-started.md` (Step 6) | `beauty-brand-guide.md` 다운로드 완료 화면 |
 | 🔴 | `module1-steering/write-steering.md` (Step 3) | Steering 적용 후 받은 답변 화면 |
 | 🔴 | `module2-vibe-coding/first-prompt.md` | `product-card.html` 완성 후 브라우저 실행 화면 (첫 프롬프트 결과) |
 | 🔴 | `module2-vibe-coding/iterate.md` (개선 1) | 다크+골드 톤 개선 후 카드 |

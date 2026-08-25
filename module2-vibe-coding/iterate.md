@@ -34,7 +34,7 @@ product-card.html에서 카드 디자인을 좀 더 고급스럽게 바꿔줘:
 
 ### 개선 2: 브랜드 가이드 기반 마케팅 카피 자동 생성
 
-> 💡 이 단계는 `data/beauty-brand-guide.md`를 사용합니다. 없다면 [환경 설정](../introduction/getting-started.md) Step 5에서 먼저 받아두세요.
+> 💡 이 단계는 `data/beauty-brand-guide.md`를 사용합니다. 없다면 [환경 설정](../introduction/getting-started.md) Step 6에서 먼저 받아두세요.
 
 ```
 data/beauty-brand-guide.md 파일을 참고해서, 카드에 "AI 카피 생성" 버튼을 추가해줘.

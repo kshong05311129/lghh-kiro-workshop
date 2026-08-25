@@ -110,7 +110,7 @@ steering 파일에 아래 규칙을 추가해줘:
 ### "Steering이 적용 안 되는 것 같아요"
 
 * 파일 경로가 `.kiro/steering/` 안에 있는지 확인
-* `data/beauty-brand-guide.md`가 실제로 존재하는지 확인 (없다면 [환경 설정](../introduction/getting-started.md)의 Step 5 다시 진행)
+* `data/beauty-brand-guide.md`가 실제로 존재하는지 확인 (없다면 [환경 설정](../introduction/getting-started.md)의 Step 6 다시 진행)
 * 채팅을 새로 시작해보세요 (새 대화)
 
 ***
