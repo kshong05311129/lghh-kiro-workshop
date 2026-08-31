@@ -57,7 +57,7 @@ Task 2 실행해줘
 
 or
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: 결과 확인
 

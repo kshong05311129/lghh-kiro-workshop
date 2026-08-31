@@ -37,11 +37,11 @@ graph LR
 Kiro의 **Spec 패널**을 열어봅시다:
 
 1. 왼쪽 사이드바에서 Spec(설계) 아이콘을 클릭 (또는 상단 메뉴에서 진입)
-2. **"+ Create New Spec"** 클릭&#x20;
+2. **"+ Create New Spec"** 클릭
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-아래 내용을 입력 후 엔터 :&#x20;
+아래 내용을 입력 후 엔터 :
 
 ```
 경쟁사 비교 분석 도구를 만들고 싶어. Spec을 작성해줘.
@@ -67,11 +67,9 @@ Kiro의 **Spec 패널**을 열어봅시다:
 4.  위 내용을 입력 후 엔터를 치면 오른쪽 봇에 "기능 개발" 선택하고, "Submit answer" 클릭.
 
     <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-5.  4번 이후에 아래 메세지가 나타나면, "Requirements" 선택하고, Submit answer" 클릭&#x20;
+5.  4번 이후에 아래 메세지가 나타나면, "Requirements" 선택하고, Submit answer" 클릭
 
     <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > 💡 화면 구성은 Kiro 버전에 따라 문구가 조금 다를 수 있습니다. 진행자 화면을 참고하세요.
 
@@ -98,8 +96,6 @@ Spec 파일은 `.kiro/specs/` 폴더에 저장됩니다:
 ```
 
 > _생성된 Requirements 문서_
->
->
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -121,8 +117,6 @@ Requirements가 만족스러우면 **Design** 단계로 넘어갑니다.
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-
-
 Kiro가 Requirements를 바탕으로 \*\*설계 문서(Design)\*\*를 자동 생성합니다:
 
 | 설계 항목          | 쉽게 말하면                 |
@@ -134,8 +128,6 @@ Kiro가 Requirements를 바탕으로 \*\*설계 문서(Design)\*\*를 자동 생
 > ⚠️ **참고**: Design 문서에 영어가 많이 보여도 당황하지 마세요! 개발자를 위한 설계도이기 때문에 영어가 섞이는 것이 정상입니다.
 
 > 📸 _Design 문서 및 Task 목록_
->
->
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
