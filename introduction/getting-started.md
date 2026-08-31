@@ -9,7 +9,7 @@
 * [ ] 노트북 준비 (Windows 또는 Mac)
 * [ ] 인터넷 연결 확인
 * [ ] Kiro IDE 설치 완료
-* [ ] Python / Node.js 설치 완료
+* [ ] Python / Node.js / uv 설치 완료
 * [ ] 로그인 완료
 * [ ] 실습 데이터 다운로드 완료
 
@@ -43,19 +43,34 @@
 
 > 💡 설치가 안 되면 손 들어주세요! 진행자가 도와드립니다. 🙋
 
-## Step 3: 필수 프로그램 설치 (Python / Node.js) 🐍
+## Step 3: 필수 프로그램 설치 (Python / Node.js / uv) 🐍
 
 > 💡 Kiro가 코드를 만든 뒤 문법 오류가 없는지 스스로 확인하면서, 가끔 Python이나 Node.js를 자동으로 실행합니다. 미리 설치해두면 이 과정이 매끄럽게 진행됩니다.
+
+### 💬 이게 다 뭔가요? (프로그래밍 몰라도 OK)
+
+* **Python / Node.js**: 프로그래밍 언어를 "실행"시켜주는 프로그램입니다. Kiro가 코드를 만들고 나면, 그 코드가 실제로 잘 작동하는지 컴퓨터에서 직접 돌려보면서 확인하는데, 이때 필요한 실행기라고 생각하시면 됩니다.
+* **uv**: Python으로 만들어진 작은 프로그램들을 빠르게 설치하고 실행해주는 보조 도구입니다. 오늘 워크샵 뒷부분(Module 6: MCP 연동)에서 AI에게 웹 검색 같은 외부 기능을 연결할 때 사용합니다.
+
+지금은 "설치만" 해두고, 실제로 어떻게 쓰이는지는 각 모듈에서 자연스럽게 보게 됩니다.
 
 ### Windows
 
 1. **Python**: [python.org/downloads](https://www.python.org/downloads/)에서 다운로드 후 설치. 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크하세요.
 2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
+   ```bash
+   pip install uv
+   ```
 
 ### Mac
 
 1. **Python**: 대부분 기본 내장되어 있습니다. 터미널을 열어 `python3 --version`을 입력했을 때 버전이 나오면 OK. 처음 실행 시 "Install Command Line Developer Tools" 팝업이 뜨면 설치를 눌러주세요 (몇 분 소요될 수 있습니다).
 2. **Node.js**: 터미널에서 `brew install node` (Homebrew가 없다면 [brew.sh](https://brew.sh) 참고)
+3. **uv**: 터미널에서 아래 명령을 입력합니다.
+   ```bash
+   brew install uv
+   ```
 
 > 💡 설치가 번거로우면 진행자에게 요청하세요! 워크샵 시작 전 미리 도와드릴 수 있습니다.
 
@@ -146,10 +161,11 @@ AI가 답변하면 성공입니다! 🎉
 * 인터넷 연결 확인 후 다시 요청
 * `data` 폴더가 없다면 "data 폴더 만들어줘"라고 먼저 요청
 
-### "python3 / node 명령이 안 먹혀요"
+### "python3 / node / uv 명령이 안 먹혀요"
 
 * Windows: 설치 시 PATH 등록 체크를 놓쳤을 수 있습니다. 재설치하거나, 설치 후 컴퓨터를 재시작해보세요.
-* Mac: 터미널에서 `python3 --version`, `node --version`으로 설치 여부 확인
+* Mac: 터미널에서 `python3 --version`, `node --version`, `uv --version`으로 설치 여부 확인
+* `uv` 설치가 안 되면 Python이 먼저 정상 설치되어 있는지 확인 후 `pip install uv`(Windows) / `brew install uv`(Mac)를 다시 시도하세요.
 * 그래도 안 되면 진행자에게 요청하세요 — 이 부분이 없어도 워크샵 진행 자체는 가능합니다.
 
 ***
