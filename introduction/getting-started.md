@@ -195,13 +195,16 @@ AI가 답변하면 성공입니다! 🎉
   1. **새 터미널 창을 열어서 다시 확인** (설치 전에 열어둔 터미널은 PATH가 갱신되지 않습니다 — 대부분 이걸로 해결됩니다)
   2. 그래도 안 되면 컴퓨터 재시작 후 다시 확인
   3. 그래도 안 되면 위 "Microsoft Store가 열려요" 항목(앱 실행 별칭) 확인
-  4. 그래도 안 되면 PATH를 직접 등록해야 하는데, **`setx PATH "...;%PATH%"` 형태는 쓰지 마세요** — PATH가 길면 1024자 제한에 걸려 조용히 잘리면서 다른 프로그램들 PATH까지 같이 망가질 수 있습니다.
-     * (참가자용, 클릭으로 안전하게) **설정 → 시스템 정보 → 고급 시스템 설정 → 환경 변수 → 사용자 변수의 `Path` → 편집 → 새로 만들기**에서 Python 설치 경로(`where python`으로 확인, 보통 `...\AppData\Local\Programs\Python\Python313`)를 추가하세요.
-     * (진행자용, cmd에서 명령으로 빠르게) `where python`으로 경로 확인 후, **cmd**에서 `setx` 대신 `reg add`를 쓰면 1024자 제한 없이 안전합니다:
+  4. 그래도 안 되면 PATH를 직접 등록합니다. `where python`으로 경로 확인 후:
+     ```cmd
+     setx PATH "C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313;%PATH%"
+     ```
+     (버전이 다르면 `Python313` 부분만 `where python` 결과에 맞게 바꿔주세요. 적용 후 새 터미널 필요.)
+     * ⚠️ **그런데도 계속 안 되거나, 다른 프로그램(git 등) 명령어가 갑자기 같이 안 먹히면**: PATH가 1024자 넘어서 `setx`가 잘랐을 가능성이 있습니다. 이 경우 아래로 다시 등록하세요.
        ```cmd
        reg add "HKCU\Environment" /v Path /t REG_EXPAND_SZ /d "%PATH%;C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313" /f
        ```
-       (버전이 다르면 `Python313` 부분만 `where python` 결과에 맞게 바꿔주세요. 적용 후 새 터미널 필요.)
+     * 또는 (클릭으로 안전하게) **설정 → 시스템 정보 → 고급 시스템 설정 → 환경 변수 → 사용자 변수의 `Path` → 편집 → 새로 만들기**에서 같은 경로를 추가해도 됩니다.
 * Windows에서 `python` 입력 시 Microsoft Store가 열리는 경우: 위 Step 3의 "앱 실행 별칭" 안내를 확인하세요.
 * Mac: 터미널에서 `python3 --version`, `node --version`, `uv --version`으로 설치 여부 확인
 * `uv` 설치가 안 되면 Python이 먼저 정상 설치되어 있는지 확인 후 `pip install uv`(Windows) / `brew install uv`(Mac)를 다시 시도하세요.
