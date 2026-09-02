@@ -27,6 +27,8 @@
 
 > 💡 Mac 칩 확인법: 좌상단 🍎 → "이 Mac에 관하여" → 칩 확인
 
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
 ## Step 2: 설치하기
 
 ### Windows
@@ -65,7 +67,7 @@
 >
 > 설치 도중 "이 앱이 디바이스를 변경할 수 있도록 허용하시겠습니까?" 같은 창이 뜨면(특히 Node.js 설치 시) \*\*"예"\*\*를 클릭하면 됩니다 — 필요할 때만 winget이 알아서 권한을 요청하는 것이니 당황하지 마세요.
 >
-> ![](<../.gitbook/assets/image (25).png>)
+> <img src="../.gitbook/assets/image (25).png" alt="" data-size="original">
 
 1.  **Python**: 먼저 이미 설치되어 있는지 확인합니다 (Windows는 `python3`가 아니라 `python`입니다).
 
@@ -81,9 +83,7 @@
 
     > <img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
 
-    {% hint style="danger" %}
-    설치 후 **반드시 새 터미널 창을 열어서** 다시 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
-    {% endhint %}
+    <div data-gb-custom-block data-tag="hint" data-style="danger" class="hint hint-danger"><p>설치 후 <strong>반드시 새 터미널 창을 열어서</strong> 다시 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.</p></div>
 
     ```bash
     python --version
@@ -246,9 +246,7 @@ AI가 답변하면 성공입니다! 🎉
   3. 그래도 안 되면 위 "Microsoft Store가 열려요" 항목(앱 실행 별칭) 확인
   4.  그래도 안 되면 PATH를 직접 등록합니다.
 
-      {% hint style="danger" %}
-      **반드시 `where python`으로 내 컴퓨터의 실제 경로를 먼저 확인하세요.** 아래 명령의 경로(`Python313` 등)는 어디까지나 **예시**입니다. 확인 없이 예시 경로를 그대로 복사해서 실행하면, 실제로는 존재하지 않는 경로가 등록되어 오히려 안 될 수 있습니다.
-      {% endhint %}
+      <div data-gb-custom-block data-tag="hint" data-style="danger" class="hint hint-danger"><p><strong>반드시 <code>where python</code>으로 내 컴퓨터의 실제 경로를 먼저 확인하세요.</strong> 아래 명령의 경로(<code>Python313</code> 등)는 어디까지나 <strong>예시</strong>입니다. 확인 없이 예시 경로를 그대로 복사해서 실행하면, 실제로는 존재하지 않는 경로가 등록되어 오히려 안 될 수 있습니다.</p></div>
 
       ```cmd
       where python
