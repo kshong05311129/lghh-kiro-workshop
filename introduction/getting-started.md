@@ -56,7 +56,11 @@
 
 ### Windows
 
-1. **Python**: [python.org/downloads](https://www.python.org/downloads/)에서 다운로드 후 설치. 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크하세요. 설치 후 터미널(명령 프롬프트)에서 `python --version`으로 확인 (Windows는 `python3`가 아니라 `python`입니다).
+1. **Python**: [python.org/downloads/windows](https://www.python.org/downloads/windows/)에 접속합니다.
+   * ⚠️ 맨 위에 있는 **"Download Python install manager"** 버튼은 누르지 마세요 — 별도 관리 도구를 먼저 설치하고 명령어를 한 번 더 입력해야 하는 복잡한 방식입니다.
+   * 아래로 스크롤해서 최신 버전(예: Python 3.13.x) 아래 있는 **"Windows installer (64-bit)"** 링크를 클릭해 다운로드합니다.
+   * 다운로드한 파일을 실행하고, 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크한 뒤 설치합니다.
+   * 설치 후 터미널(명령 프롬프트)에서 `python --version`으로 확인 (Windows는 `python3`가 아니라 `python`입니다).
 2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
 3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
    ```bash
