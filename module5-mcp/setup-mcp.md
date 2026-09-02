@@ -34,14 +34,14 @@ Python 표준 라이브러리(csv, sqlite3)만 사용해서 변환하고, CSV는
     },
     "product-db": {
       "command": "uvx",
-      "args": ["mcp-server-sqlite", "--db-path", "data/lghh_products.db"],
+      "args": ["--with", "mcp==1.1.2", "mcp-server-sqlite", "--db-path", "data/lghh_products.db"],
       "timeout": 60000
     }
   }
 }
 ```
 
-> 💡 `aws-docs`는 AWS 공식 문서를 검색·조회하는 MCP, `product-db`는 Step 1에서 만든 사내 제품 DB(`data/lghh_products.db`)를 조회하는 MCP입니다. `timeout`은 서버가 처음 뜨는 데 걸리는 시간(밀리초)을 기다려주는 값이라, 60000(60초)은 되어야 `uvx`가 패키지를 내려받아 첫 실행할 시간을 벌 수 있습니다.
+> 💡 `aws-docs`는 AWS 공식 문서를 검색·조회하는 MCP, `product-db`는 Step 1에서 만든 사내 제품 DB(`data/lghh_products.db`)를 조회하는 MCP입니다. `timeout`은 서버가 처음 뜨는 데 걸리는 시간(밀리초)을 기다려주는 값이라, 60000(60초)은 되어야 `uvx`가 패키지를 내려받아 첫 실행할 시간을 벌 수 있습니다. `--with "mcp==1.1.2"`는 `mcp-server-sqlite`가 구버전 MCP SDK로 만들어져 있어서, uvx가 최신 `mcp` 라이브러리를 같이 받아오면 충돌해서 죽기 때문에 넣은 옵션입니다(아래 트러블슈팅 참고).
 
 ## Step 3: MCP 서버 활성화
 
@@ -78,7 +78,7 @@ Python 표준 라이브러리(csv, sqlite3)만 사용해서 변환하고, CSV는
 
 * `data/lghh_products.db` 파일이 프로젝트 폴더에 있는지 확인 (없다면 "data 폴더 안에 lghh_products.db 파일이 있는지 확인해줘"라고 Kiro에 요청)
 * Kiro를 프로젝트 루트 폴더(Step 5에서 만든 `kiro-beauty-workshop`)에서 열었는지 확인 — 경로가 어긋나면 DB를 못 찾습니다
-* (진행자 참고) `mcp-server-sqlite`는 2025년 5월 이후 유지보수가 중단(archived)된 패키지입니다. 지금도 설치·실행은 되지만, 당일 갑자기 설치가 안 되면 패키지 자체 이슈일 수 있으니 참가자에게 "원래 그런 것"이라 안내하고 넘어가세요.
+* **`AttributeError: 'Server' object has no attribute 'list_resources'`로 즉시 죽는 경우**: `mcp-server-sqlite`(2025년 5월 이후 유지보수 중단된 패키지)가 구버전 MCP SDK API를 쓰는데, `uvx`가 최신 `mcp` 라이브러리를 받아오면서 버전이 안 맞아 생기는 문제입니다. 위 Step 2 설정처럼 `args`에 `"--with", "mcp==1.1.2"`를 넣어 구버전으로 고정하면 해결됩니다. (이미 반영되어 있음 — 혹시 이 옵션을 빼고 입력했다면 다시 넣어주세요.)
 
 ### (Windows) "제품 DB 변환 중 한글이 깨지거나 에러가 나요"
 
