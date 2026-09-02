@@ -11,9 +11,10 @@
 ```
 data/lghh_products_2026.csv 파일을 읽어서 data/lghh_products.db라는 이름의 SQLite 데이터베이스로 변환해줘.
 테이블 이름은 products로 하고, CSV의 컬럼(brand, product_name, category, key_ingredients, price, launch_month, target, tier)을 그대로 사용해줘.
+Python 표준 라이브러리(csv, sqlite3)만 사용해서 변환하고, CSV는 UTF-8 인코딩으로 읽어줘. 별도 패키지 설치는 하지 마.
 ```
 
-> 💡 Kiro가 Python 스크립트를 작성해서 실행하는 과정을 보여줄 것입니다. `data/lghh_products.db` 파일이 생겼다면 성공!
+> 💡 Kiro가 Python 스크립트를 작성해서 실행하는 과정을 보여줄 것입니다(추가 설치 없이 Step 3에서 설치한 Python으로 바로 됩니다). `data/lghh_products.db` 파일이 생겼다면 성공!
 
 ## Step 2: MCP 설정 파일 생성
 
@@ -78,6 +79,11 @@ data/lghh_products_2026.csv 파일을 읽어서 data/lghh_products.db라는 이�
 * `data/lghh_products.db` 파일이 프로젝트 폴더에 있는지 확인 (없다면 "data 폴더 안에 lghh_products.db 파일이 있는지 확인해줘"라고 Kiro에 요청)
 * Kiro를 프로젝트 루트 폴더(Step 5에서 만든 `kiro-beauty-workshop`)에서 열었는지 확인 — 경로가 어긋나면 DB를 못 찾습니다
 * (진행자 참고) `mcp-server-sqlite`는 2025년 5월 이후 유지보수가 중단(archived)된 패키지입니다. 지금도 설치·실행은 되지만, 당일 갑자기 설치가 안 되면 패키지 자체 이슈일 수 있으니 참가자에게 "원래 그런 것"이라 안내하고 넘어가세요.
+
+### (Windows) "제품 DB 변환 중 한글이 깨지거나 에러가 나요"
+
+* Windows 기본 인코딩(cp949) 때문에 발생할 수 있습니다. Step 1 프롬프트에 있는 "UTF-8 인코딩으로 읽어줘" 문구를 빼지 말고 그대로 입력했는지 확인하세요.
+* 그래도 안 되면 "data/lghh_products.db를 지우고, CSV를 UTF-8로 명시해서 다시 변환해줘"라고 Kiro에 다시 요청하세요.
 
 ### "조회/검색이 안 돼요"
 
