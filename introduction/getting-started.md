@@ -242,7 +242,17 @@ AI가 답변하면 성공입니다! 🎉
   1. **새 터미널 창을 열어서 다시 확인** (설치 전에 열어둔 터미널은 PATH가 갱신되지 않습니다 — 대부분 이걸로 해결됩니다)
   2. 그래도 안 되면 컴퓨터 재시작 후 다시 확인
   3. 그래도 안 되면 위 "Microsoft Store가 열려요" 항목(앱 실행 별칭) 확인
-  4.  그래도 안 되면 PATH를 직접 등록합니다. `where python`으로 경로 확인 후:
+  4.  그래도 안 되면 PATH를 직접 등록합니다.
+
+      {% hint style="danger" %}
+      **반드시 `where python`으로 내 컴퓨터의 실제 경로를 먼저 확인하세요.** 아래 명령의 경로(`Python313` 등)는 어디까지나 **예시**입니다. 확인 없이 예시 경로를 그대로 복사해서 실행하면, 실제로는 존재하지 않는 경로가 등록되어 오히려 안 될 수 있습니다.
+      {% endhint %}
+
+      ```cmd
+      where python
+      ```
+
+      위 명령으로 나온 경로를 아래 `C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313` 자리에 **그대로 바꿔 넣어서** 실행합니다:
 
       ```cmd
       setx PATH "C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313;%PATH%"
