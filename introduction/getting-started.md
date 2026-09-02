@@ -58,36 +58,41 @@
 
 > 💡 아래 3개는 **관리자 권한 PowerShell**(또는 명령 프롬프트)에서 winget 명령 하나씩으로 설치합니다. 시작 메뉴에서 "PowerShell" 검색 → 마우스 오른쪽 클릭 → **"관리자 권한으로 실행"**.
 
-1. **Python**:
-   ```bash
-   winget install Python.Python.3.13
-   ```
-   설치 후 **반드시 새 터미널 창을 열어서** `python --version`으로 확인하세요 (Windows는 `python3`가 아니라 `python`입니다). 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
-   * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
+1.  **Python**:
 
-   > 📸 _스크린샷 삽입: winget으로 Python 설치하는 화면_
+    ```bash
+    winget install Python.Python.3.13
+    ```
 
-   > 💡 **대안: 브라우저에서 설치하기** — [python.org/downloads/windows](https://www.python.org/downloads/windows/) 접속 → 맨 위 **"Download Python install manager"** 버튼은 누르지 말고(별도 관리 도구를 또 설치해야 하는 복잡한 방식), 아래로 스크롤해서 최신 버전 아래 **"Windows installer (64-bit)"** 클릭 → 설치 화면 하단 **"Add python.exe to PATH"** 체크박스 꼭 체크.
+    설치 후 **반드시 새 터미널 창을 열어서** `python --version`으로 확인하세요 (Windows는 `python3`가 아니라 `python`입니다). 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
 
-2. **Node.js**:
-   ```bash
-   winget install OpenJS.NodeJS.LTS
-   ```
-   설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
+    * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
 
-   > 📸 _스크린샷 삽입: winget으로 Node.js 설치하는 화면_
+    > <img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
 
-   > 💡 **대안: 브라우저에서 설치하기** — [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+    > 💡 **대안: 브라우저에서 설치하기** — [python.org/downloads/windows](https://www.python.org/downloads/windows/) 접속 → 맨 위 **"Download Python install manager"** 버튼은 누르지 말고(별도 관리 도구를 또 설치해야 하는 복잡한 방식), 아래로 스크롤해서 최신 버전 아래 **"Windows installer (64-bit)"** 클릭 → 설치 화면 하단 **"Add python.exe to PATH"** 체크박스 꼭 체크.
+2.  **Node.js**:
 
-3. **uv**: Python 설치가 끝난 뒤,
-   ```bash
-   winget install astral-sh.uv
-   ```
-   설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
+    ```bash
+    winget install OpenJS.NodeJS.LTS
+    ```
 
-   > 📸 _스크린샷 삽입: winget으로 uv 설치하는 화면_
+    설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
 
-   > 💡 **대안**: `pip install uv`
+    > ![](<../.gitbook/assets/image (22).png>)
+
+    > 💡 **대안: 브라우저에서 설치하기** — [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+3.  **uv**: Python 설치가 끝난 뒤,
+
+    ```bash
+    winget install astral-sh.uv
+    ```
+
+    설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
+
+    > ![](<../.gitbook/assets/image (23).png>)
+
+    > 💡 **대안**: `pip install uv`
 
 > ⚠️ **`python`을 입력했는데 갑자기 Microsoft Store가 열려요?** Windows에만 있는 증상입니다. 설정 → 앱 → 고급 앱 설정 → **앱 실행 별칭**에서 `python.exe`, `python3.exe` 항목을 모두 꺼주세요. 그런 다음 터미널을 새로 열어 다시 시도하세요.
 
@@ -95,10 +100,11 @@
 
 1. **Python**: 대부분 기본 내장되어 있습니다. 터미널을 열어 `python3 --version`을 입력했을 때 버전이 나오면 OK. 처음 실행 시 "Install Command Line Developer Tools" 팝업이 뜨면 설치를 눌러주세요 (몇 분 소요될 수 있습니다).
 2. **Node.js**: 터미널에서 `brew install node` (Homebrew가 없다면 [brew.sh](https://brew.sh) 참고)
-3. **uv**: 터미널에서 아래 명령을 입력합니다.
-   ```bash
-   brew install uv
-   ```
+3.  **uv**: 터미널에서 아래 명령을 입력합니다.
+
+    ```bash
+    brew install uv
+    ```
 
 > 💡 설치가 번거로우면 진행자에게 요청하세요! 워크샵 시작 전 미리 도와드릴 수 있습니다.
 
@@ -195,16 +201,20 @@ AI가 답변하면 성공입니다! 🎉
   1. **새 터미널 창을 열어서 다시 확인** (설치 전에 열어둔 터미널은 PATH가 갱신되지 않습니다 — 대부분 이걸로 해결됩니다)
   2. 그래도 안 되면 컴퓨터 재시작 후 다시 확인
   3. 그래도 안 되면 위 "Microsoft Store가 열려요" 항목(앱 실행 별칭) 확인
-  4. 그래도 안 되면 PATH를 직접 등록합니다. `where python`으로 경로 확인 후:
-     ```cmd
-     setx PATH "C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313;%PATH%"
-     ```
-     (버전이 다르면 `Python313` 부분만 `where python` 결과에 맞게 바꿔주세요. 적용 후 새 터미널 필요.)
-     * ⚠️ **그런데도 계속 안 되거나, 다른 프로그램(git 등) 명령어가 갑자기 같이 안 먹히면**: PATH가 1024자 넘어서 `setx`가 잘랐을 가능성이 있습니다. 이 경우 아래로 다시 등록하세요.
-       ```cmd
-       reg add "HKCU\Environment" /v Path /t REG_EXPAND_SZ /d "%PATH%;C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313" /f
-       ```
-     * 또는 (클릭으로 안전하게) **설정 → 시스템 정보 → 고급 시스템 설정 → 환경 변수 → 사용자 변수의 `Path` → 편집 → 새로 만들기**에서 같은 경로를 추가해도 됩니다.
+  4.  그래도 안 되면 PATH를 직접 등록합니다. `where python`으로 경로 확인 후:
+
+      ```cmd
+      setx PATH "C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313;%PATH%"
+      ```
+
+      (버전이 다르면 `Python313` 부분만 `where python` 결과에 맞게 바꿔주세요. 적용 후 새 터미널 필요.)
+
+      *   ⚠️ **그런데도 계속 안 되거나, 다른 프로그램(git 등) 명령어가 갑자기 같이 안 먹히면**: PATH가 1024자 넘어서 `setx`가 잘랐을 가능성이 있습니다. 이 경우 아래로 다시 등록하세요.
+
+          ```cmd
+          reg add "HKCU\Environment" /v Path /t REG_EXPAND_SZ /d "%PATH%;C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313" /f
+          ```
+      * 또는 (클릭으로 안전하게) **설정 → 시스템 정보 → 고급 시스템 설정 → 환경 변수 → 사용자 변수의 `Path` → 편집 → 새로 만들기**에서 같은 경로를 추가해도 됩니다.
 * Windows에서 `python` 입력 시 Microsoft Store가 열리는 경우: 위 Step 3의 "앱 실행 별칭" 안내를 확인하세요.
 * Mac: 터미널에서 `python3 --version`, `node --version`, `uv --version`으로 설치 여부 확인
 * `uv` 설치가 안 되면 Python이 먼저 정상 설치되어 있는지 확인 후 `pip install uv`(Windows) / `brew install uv`(Mac)를 다시 시도하세요.
