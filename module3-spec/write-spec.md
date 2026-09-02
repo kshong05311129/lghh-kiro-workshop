@@ -199,4 +199,4 @@ graph LR
 
 > 🎉 **축하합니다!** Module 4를 완료했습니다! Spec으로 체계적인 개발을 경험했어요!
 
-👉 다음: [Module 5: 자유 실습](../module4-challenge/)
+👉 다음: [Module 5: MCP 연동](../module5-mcp/)

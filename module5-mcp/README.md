@@ -1,4 +1,4 @@
-# Module 6: MCP 연동
+# Module 5: MCP 연동
 
 > ⏱️ 소요시간: 약 20분
 

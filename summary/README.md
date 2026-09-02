@@ -12,8 +12,8 @@
 | ✅ 대화로 코딩 (Vibe Coding) | 제품 소개 카드 생성기 |
 | ✅ 자동화 (Hook & Skill) | 제품 분석 대시보드, 자동 분류 |
 | ✅ 체계적 설계 (Spec) | 경쟁사 비교 분석 도구 (Requirements/Design) |
-| ✅ 자유 실습 | 나만의 뷰티 업무 도구 |
 | ✅ 외부 연결 (MCP) | 사내 제품 DB 조회 AI |
+| ✅ 자유 실습 | 나만의 뷰티 업무 도구 |
 
 ```mermaid
 graph TD
@@ -21,15 +21,15 @@ graph TD
     A --> C[Module 2: Vibe Coding]
     A --> D[Module 3: Hook & Skill]
     A --> E[Module 4: Spec 기반]
-    A --> F[Module 5: 자유 실습]
-    A --> G[Module 6: MCP 연동]
+    A --> F[Module 5: MCP 연동]
+    A --> G[Module 6: 자유 실습]
 
     B --> B1[AI에게 역할 부여]
     C --> C1[대화로 코딩하기]
     D --> D1[자동화 & 단축 명령]
     E --> E1[설계서로 체계적 개발]
-    F --> F1[나만의 도구 만들기]
-    G --> G1[외부 지식 연결]
+    F --> F1[외부 지식 연결]
+    G --> G1[나만의 도구 만들기]
 ```
 
 > 💪 코딩을 한 줄도 직접 쓰지 않고, **말로 설명해서** 이 모든 걸 만들었습니다!

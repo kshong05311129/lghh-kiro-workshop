@@ -151,4 +151,4 @@ or
 
 > 🎉 **축하합니다!** Spec 기반으로 체계적인 도구를 만드는 방법을 배웠습니다!
 
-👉 다음: [Module 5: 자유 실습](../module4-challenge/)
+👉 다음: [Module 5: MCP 연동](../module5-mcp/)

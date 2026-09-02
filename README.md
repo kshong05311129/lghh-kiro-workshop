@@ -29,9 +29,9 @@
 | ⏱️ 30분 | [Module 2: Vibe Coding](module2-vibe-coding/README.md) | 대화로 코딩하기 |
 | ⏱️ 15분 | [Module 3: Hook & Skill](module3-hook-skill/README.md) | 자동화 & 단축 명령 |
 | ⏱️ 30분 | [Module 4: Spec 기반 개발](module3-spec/README.md) | 체계적으로 만들기 |
-| ⏱️ 25분 | [Module 5: 자유 실습](module4-challenge/README.md) | 나만의 도구 만들기 |
-| ⏱️ 20분 | [Module 6: MCP 연동](module5-mcp/README.md) | AI에 웹검색 능력 부여 |
-| ⏱️ 10분 | [마무리](summary/README.md) | 정리 및 Q&A |
+| ⏱️ 20분 | [Module 5: MCP 연동](module5-mcp/README.md) | AI에 사내 DB/AWS 문서 조회 능력 부여 |
+| ⏱️ 50분 | [Module 6: 자유 실습](module4-challenge/README.md) | 나만의 도구 만들기(30분) + 발표(20분) |
+| ⏱️ 10분 | [마무리](summary/README.md) | 정리 및 NPL 프로젝트 연결 |
 
 ## 🤔 이런 분들을 위한 워크샵입니다
 
