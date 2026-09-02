@@ -79,7 +79,9 @@
     winget install Python.Python.3.13
     ```
 
+    {% hint style="danger" %}
     설치 후 **반드시 새 터미널 창을 열어서** 다시 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
+    {% endhint %}
 
     > <img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
 
