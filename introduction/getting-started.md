@@ -94,7 +94,7 @@
     * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
 
     > 💡 **대안: 브라우저에서 설치하기** — [python.org/downloads/windows](https://www.python.org/downloads/windows/) 접속 → 맨 위 **"Download Python install manager"** 버튼은 누르지 말고(별도 관리 도구를 또 설치해야 하는 복잡한 방식), 아래로 스크롤해서 최신 버전 아래 **"Windows installer (64-bit)"** 클릭 → 설치 화면 하단 **"Add python.exe to PATH"** 체크박스 꼭 체크.
-2.  **Node.js**: 먼저 이미 설치되어 있는지 확인합니다.
+2.  [**Node.js**](https://claude.ai/code/artifact/93048e6a-72db-4fbe-adcf-20847edef5aa): 먼저 이미 설치되어 있는지 확인합니다.
 
     ```bash
     node --version
