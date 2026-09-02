@@ -56,42 +56,37 @@
 
 ### Windows
 
-1. **Python**: [python.org/downloads/windows](https://www.python.org/downloads/windows/)에 접속합니다.
-   * ⚠️ 맨 위에 있는 **"Download Python install manager"** 버튼은 누르지 마세요 — 별도 관리 도구를 먼저 설치하고 명령어를 한 번 더 입력해야 하는 복잡한 방식입니다.
-   * 아래로 스크롤해서 최신 버전(예: Python 3.13.x) 아래 있는 **"Windows installer (64-bit)"** 링크를 클릭해 다운로드합니다.
-   * 다운로드한 파일을 실행하고, 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크한 뒤 설치합니다.
-   * 설치 후 터미널(명령 프롬프트)에서 `python --version`으로 확인 (Windows는 `python3`가 아니라 `python`입니다).
+> 💡 아래 3개는 **관리자 권한 PowerShell**(또는 명령 프롬프트)에서 winget 명령 하나씩으로 설치합니다. 시작 메뉴에서 "PowerShell" 검색 → 마우스 오른쪽 클릭 → **"관리자 권한으로 실행"**.
 
-   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
-   > ```bash
-   > winget install Python.Python.3.13
-   > ```
-   > 설치 후에는 **반드시 새 터미널 창을 열어서** `python --version`을 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
+1. **Python**:
+   ```bash
+   winget install Python.Python.3.13
+   ```
+   설치 후 **반드시 새 터미널 창을 열어서** `python --version`으로 확인하세요 (Windows는 `python3`가 아니라 `python`입니다). 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
 
    > 📸 _스크린샷 삽입: winget으로 Python 설치하는 화면_
 
-2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+   > 💡 **대안: 브라우저에서 설치하기** — [python.org/downloads/windows](https://www.python.org/downloads/windows/) 접속 → 맨 위 **"Download Python install manager"** 버튼은 누르지 말고(별도 관리 도구를 또 설치해야 하는 복잡한 방식), 아래로 스크롤해서 최신 버전 아래 **"Windows installer (64-bit)"** 클릭 → 설치 화면 하단 **"Add python.exe to PATH"** 체크박스 꼭 체크.
 
-   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
-   > ```bash
-   > winget install OpenJS.NodeJS.LTS
-   > ```
-   > 설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
+2. **Node.js**:
+   ```bash
+   winget install OpenJS.NodeJS.LTS
+   ```
+   설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
 
    > 📸 _스크린샷 삽입: winget으로 Node.js 설치하는 화면_
 
-3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
-   ```bash
-   pip install uv
-   ```
+   > 💡 **대안: 브라우저에서 설치하기** — [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
 
-   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
-   > ```bash
-   > winget install astral-sh.uv
-   > ```
-   > 설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
+3. **uv**: Python 설치가 끝난 뒤,
+   ```bash
+   winget install astral-sh.uv
+   ```
+   설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
 
    > 📸 _스크린샷 삽입: winget으로 uv 설치하는 화면_
+
+   > 💡 **대안**: `pip install uv`
 
 > ⚠️ **`python`을 입력했는데 갑자기 Microsoft Store가 열려요?** Windows에만 있는 증상입니다. 설정 → 앱 → 고급 앱 설정 → **앱 실행 별칭**에서 `python.exe`, `python3.exe` 항목을 모두 꺼주세요. 그런 다음 터미널을 새로 열어 다시 시도하세요.
 
