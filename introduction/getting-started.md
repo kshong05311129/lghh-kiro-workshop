@@ -63,6 +63,7 @@
    winget install Python.Python.3.13
    ```
    설치 후 **반드시 새 터미널 창을 열어서** `python --version`으로 확인하세요 (Windows는 `python3`가 아니라 `python`입니다). 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
+   * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
 
    > 📸 _스크린샷 삽입: winget으로 Python 설치하는 화면_
 
