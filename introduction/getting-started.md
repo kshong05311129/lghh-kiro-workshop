@@ -58,17 +58,21 @@
 
 > 💡 아래 3개는 **관리자 권한 PowerShell**(또는 명령 프롬프트)에서 winget 명령 하나씩으로 설치합니다. 시작 메뉴에서 "PowerShell" 검색 → 마우스 오른쪽 클릭 → **"관리자 권한으로 실행"**.
 
-1.  **Python**:
+1.  **Python**: 먼저 이미 설치되어 있는지 확인합니다 (Windows는 `python3`가 아니라 `python`입니다).
+
+    ```bash
+    python --version
+    ```
+
+    버전이 나오면 이미 설치된 것이니 아래 설치는 건너뛰세요. **버전이 안 나올 때만** 설치합니다:
 
     ```bash
     winget install Python.Python.3.13
     ```
 
-    설치 후 **반드시 새 터미널 창을 열어서** 확인하세요 (Windows는 `python3`가 아니라 `python`입니다). 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
+    설치 후 **반드시 새 터미널 창을 열어서** 다시 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
 
     > <img src="../.gitbook/assets/image (21).png" alt="" data-size="original">
-
-    설치가 잘 됐는지 아래 명령으로 확인합니다:
 
     ```bash
     python --version
@@ -79,24 +83,44 @@
     * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
 
     > 💡 **대안: 브라우저에서 설치하기** — [python.org/downloads/windows](https://www.python.org/downloads/windows/) 접속 → 맨 위 **"Download Python install manager"** 버튼은 누르지 말고(별도 관리 도구를 또 설치해야 하는 복잡한 방식), 아래로 스크롤해서 최신 버전 아래 **"Windows installer (64-bit)"** 클릭 → 설치 화면 하단 **"Add python.exe to PATH"** 체크박스 꼭 체크.
-2.  **Node.js**:
+2.  **Node.js**: 먼저 이미 설치되어 있는지 확인합니다.
+
+    ```bash
+    node --version
+    ```
+
+    버전이 나오면 건너뛰세요. **버전이 안 나올 때만** 설치합니다:
 
     ```bash
     winget install OpenJS.NodeJS.LTS
     ```
 
-    설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
+    설치 완료 후 새 터미널 창을 열어서 다시 확인하세요:
+
+    ```bash
+    node --version
+    ```
 
     > ![](<../.gitbook/assets/image (22).png>)
 
     > 💡 **대안: 브라우저에서 설치하기** — [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
-3.  **uv**: Python 설치가 끝난 뒤,
+3.  **uv**: 먼저 이미 설치되어 있는지 확인합니다.
+
+    ```bash
+    uv --version
+    ```
+
+    버전이 나오면 건너뛰세요. **버전이 안 나올 때만**, Python 설치가 끝난 뒤 설치합니다:
 
     ```bash
     winget install astral-sh.uv
     ```
 
-    설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
+    설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 다시 확인하세요:
+
+    ```bash
+    uv --version
+    ```
 
     > ![](<../.gitbook/assets/image (23).png>)
 
