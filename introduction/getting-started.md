@@ -43,7 +43,7 @@
 
 > 💡 설치가 안 되면 손 들어주세요! 진행자가 도와드립니다. 🙋
 
-## Step 3: 필수 프로그램 설치 (Python / Node.js / uv) 🐍
+## Step 3: 필수 프로그램 설치 (Python / Node.js / uv) [🐍](https://claude.ai/code/artifact/887e8b28-d148-47af-9d8f-cfa2cf8e77c2)
 
 > 💡 Kiro가 코드를 만든 뒤 문법 오류가 없는지 스스로 확인하면서, 가끔 Python이나 Node.js를 자동으로 실행합니다. 미리 설치해두면 이 과정이 매끄럽게 진행됩니다.
 
