@@ -61,6 +61,13 @@
    * 아래로 스크롤해서 최신 버전(예: Python 3.13.x) 아래 있는 **"Windows installer (64-bit)"** 링크를 클릭해 다운로드합니다.
    * 다운로드한 파일을 실행하고, 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크한 뒤 설치합니다.
    * 설치 후 터미널(명령 프롬프트)에서 `python --version`으로 확인 (Windows는 `python3`가 아니라 `python`입니다).
+
+   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
+   > ```bash
+   > winget install Python.Python.3.13
+   > ```
+   > 설치 후에는 **반드시 새 터미널 창을 열어서** `python --version`을 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
+
 2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
 3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
    ```bash
@@ -169,7 +176,11 @@ AI가 답변하면 성공입니다! 🎉
 
 ### "python / node / uv 명령이 안 먹혀요"
 
-* Windows: `python --version`(⚠️ `python3`이 아닙니다), `node --version`, `uv --version`으로 확인. 안 나오면 설치 시 PATH 등록 체크를 놓쳤을 수 있습니다 — 재설치하거나, 설치 후 컴퓨터를 재시작해보세요.
+* Windows: `python --version`(⚠️ `python3`이 아닙니다), `node --version`, `uv --version`으로 확인. 안 나오면 아래 순서대로 시도하세요:
+  1. **새 터미널 창을 열어서 다시 확인** (설치 전에 열어둔 터미널은 PATH가 갱신되지 않습니다 — 대부분 이걸로 해결됩니다)
+  2. 그래도 안 되면 컴퓨터 재시작 후 다시 확인
+  3. 그래도 안 되면 위 "Microsoft Store가 열려요" 항목(앱 실행 별칭) 확인
+  4. 그래도 안 되면 PATH를 직접 등록해야 하는데, **`setx` 명령은 쓰지 마세요** — PATH가 길면 1024자 제한에 걸려 조용히 잘리면서 다른 프로그램들 PATH까지 같이 망가질 수 있습니다. 대신 **설정 → 시스템 정보 → 고급 시스템 설정 → 환경 변수 → 사용자 변수의 `Path` → 편집 → 새로 만들기**에서 Python 설치 경로(`where python`으로 확인)를 안전하게 추가하세요.
 * Windows에서 `python` 입력 시 Microsoft Store가 열리는 경우: 위 Step 3의 "앱 실행 별칭" 안내를 확인하세요.
 * Mac: 터미널에서 `python3 --version`, `node --version`, `uv --version`으로 설치 여부 확인
 * `uv` 설치가 안 되면 Python이 먼저 정상 설치되어 있는지 확인 후 `pip install uv`(Windows) / `brew install uv`(Mac)를 다시 시도하세요.
