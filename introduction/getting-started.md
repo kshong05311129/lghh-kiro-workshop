@@ -68,7 +68,18 @@
    > ```
    > 설치 후에는 **반드시 새 터미널 창을 열어서** `python --version`을 확인하세요. 설치 전에 이미 열려있던 터미널은 PATH가 갱신되지 않아서 "안 된다"고 착각하기 쉽습니다.
 
+   > 📸 _스크린샷 삽입: winget으로 Python 설치하는 화면_
+
 2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
+
+   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
+   > ```bash
+   > winget install OpenJS.NodeJS.LTS
+   > ```
+   > 설치 완료 후 새 터미널 창을 열어서 `node --version`으로 확인하세요.
+
+   > 📸 _스크린샷 삽입: winget으로 Node.js 설치하는 화면_
+
 3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
    ```bash
    pip install uv
