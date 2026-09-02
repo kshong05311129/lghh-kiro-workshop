@@ -85,6 +85,14 @@
    pip install uv
    ```
 
+   > 💡 **대안: winget으로 설치하기** — 관리자 권한 명령 프롬프트/PowerShell에서 아래 명령 하나로도 설치됩니다.
+   > ```bash
+   > winget install astral-sh.uv
+   > ```
+   > 설치 후 "Path environment variable modified; restart your shell" 메시지가 뜨면, 새 터미널 창을 열어서 `uv --version`으로 확인하세요.
+
+   > 📸 _스크린샷 삽입: winget으로 uv 설치하는 화면_
+
 > ⚠️ **`python`을 입력했는데 갑자기 Microsoft Store가 열려요?** Windows에만 있는 증상입니다. 설정 → 앱 → 고급 앱 설정 → **앱 실행 별칭**에서 `python.exe`, `python3.exe` 항목을 모두 꺼주세요. 그런 다음 터미널을 새로 열어 다시 시도하세요.
 
 ### Mac
