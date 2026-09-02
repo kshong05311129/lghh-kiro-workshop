@@ -56,12 +56,14 @@
 
 ### Windows
 
-1. **Python**: [python.org/downloads](https://www.python.org/downloads/)에서 다운로드 후 설치. 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크하세요.
+1. **Python**: [python.org/downloads](https://www.python.org/downloads/)에서 다운로드 후 설치. 설치 화면 하단의 **"Add python.exe to PATH"** 체크박스를 꼭 체크하세요. 설치 후 터미널(명령 프롬프트)에서 `python --version`으로 확인 (Windows는 `python3`가 아니라 `python`입니다).
 2. **Node.js**: [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
 3. **uv**: Python 설치가 끝난 뒤, 터미널(명령 프롬프트)을 열어 아래 명령을 입력합니다.
    ```bash
    pip install uv
    ```
+
+> ⚠️ **`python`을 입력했는데 갑자기 Microsoft Store가 열려요?** Windows에만 있는 증상입니다. 설정 → 앱 → 고급 앱 설정 → **앱 실행 별칭**에서 `python.exe`, `python3.exe` 항목을 모두 꺼주세요. 그런 다음 터미널을 새로 열어 다시 시도하세요.
 
 ### Mac
 
@@ -161,9 +163,10 @@ AI가 답변하면 성공입니다! 🎉
 * 인터넷 연결 확인 후 다시 요청
 * `data` 폴더가 없다면 "data 폴더 만들어줘"라고 먼저 요청
 
-### "python3 / node / uv 명령이 안 먹혀요"
+### "python / node / uv 명령이 안 먹혀요"
 
-* Windows: 설치 시 PATH 등록 체크를 놓쳤을 수 있습니다. 재설치하거나, 설치 후 컴퓨터를 재시작해보세요.
+* Windows: `python --version`(⚠️ `python3`이 아닙니다), `node --version`, `uv --version`으로 확인. 안 나오면 설치 시 PATH 등록 체크를 놓쳤을 수 있습니다 — 재설치하거나, 설치 후 컴퓨터를 재시작해보세요.
+* Windows에서 `python` 입력 시 Microsoft Store가 열리는 경우: 위 Step 3의 "앱 실행 별칭" 안내를 확인하세요.
 * Mac: 터미널에서 `python3 --version`, `node --version`, `uv --version`으로 설치 여부 확인
 * `uv` 설치가 안 되면 Python이 먼저 정상 설치되어 있는지 확인 후 `pip install uv`(Windows) / `brew install uv`(Mac)를 다시 시도하세요.
 * 그래도 안 되면 진행자에게 요청하세요 — 이 부분이 없어도 워크샵 진행 자체는 가능합니다.
