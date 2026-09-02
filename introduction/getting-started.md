@@ -87,7 +87,7 @@
     python --version
     ```
 
-    > 📸 _스크린샷 삽입: `python --version` 실행 결과 화면_
+    > ![](<../.gitbook/assets/image (24).png>)
 
     * 그래도 `python`이 안 먹히면? → 이 페이지 맨 아래 **🔧 트러블슈팅 → "python / node / uv 명령이 안 먹혀요"** 참고 (PATH 직접 등록하는 안전한 방법 있음)
 
@@ -110,7 +110,7 @@
     node --version
     ```
 
-    > ![](<../.gitbook/assets/image (22).png>)
+    > <img src="../.gitbook/assets/image (22).png" alt="" data-size="original">
 
     > 💡 **대안: 브라우저에서 설치하기** — [nodejs.org](https://nodejs.org)에서 **LTS** 버전 다운로드 후, 기본 옵션 그대로 설치.
 3.  **uv**: 먼저 이미 설치되어 있는지 확인합니다.
@@ -131,7 +131,7 @@
     uv --version
     ```
 
-    > ![](<../.gitbook/assets/image (23).png>)
+    > <img src="../.gitbook/assets/image (23).png" alt="" data-size="original">
 
     > 💡 **대안**: `pip install uv`
 
