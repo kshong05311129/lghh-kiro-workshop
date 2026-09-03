@@ -30,7 +30,9 @@ product-card.html에서 카드 디자인을 좀 더 고급스럽게 바꿔줘:
 - 가격은 크게, 볼드로
 ```
 
-> 📸 _스크린샷 삽입: 다크+골드 톤으로 개선된 카드_
+
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### 개선 2: 브랜드 가이드 기반 마케팅 카피 자동 생성
 
