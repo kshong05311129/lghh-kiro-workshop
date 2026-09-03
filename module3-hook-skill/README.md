@@ -136,7 +136,7 @@ Kiro 왼쪽 패널에서 **Agent Hooks** 섹션을 찾아 **+** 버튼을 클릭
 그 이후, **"Ask Kiro to create a hook"** 을 선택하고 아래 내용을 입력하세요:&#x20;
 
 ```
-data/lghh_products_2026.csv 파일이 AI에 의해 수정되면, 자동으로 신제품 검토 보고서를 new-product-review.html로 만들어줘.
+Hook을 만들어줘: data/lghh_products_2026.csv 파일이 AI에 의해 수정되면, 자동으로 신제품 검토 보고서를 new-product-review.html로 만들어줘.
 
 보고서에 포함할 내용:
 - 방금 추가/변경된 제품 정보 요약
