@@ -13,7 +13,7 @@
 | ✅ 자동화 (Hook & Skill) | 제품 분석 대시보드, 자동 분류 |
 | ✅ 체계적 설계 (Spec) | 경쟁사 비교 분석 도구 (Requirements/Design) |
 | ✅ 외부 연결 (MCP) | 사내 제품 DB 조회 AI |
-| ✅ 자유 실습 | 나만의 뷰티 업무 도구 |
+| ✅ 자유 실습 | 나만의 뷰티 도구 |
 
 ```mermaid
 graph TD
