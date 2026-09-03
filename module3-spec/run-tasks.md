@@ -67,7 +67,7 @@ or
 2. 브라우저에서 열기 (더블클릭)
 3. 아래 테스트 데이터로 확인:
 
-> 📸 _스크린샷 삽입: 경쟁사 비교 분석 도구 완성 화면_
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ### 테스트 데이터
 
